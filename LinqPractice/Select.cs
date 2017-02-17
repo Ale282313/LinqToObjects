@@ -13,20 +13,20 @@ namespace LinqPractice
 			this IEnumerable<TSource> source,
 			Func<TSource, TResult> selector)
 		{
-			if( source == null)
+			if (source == null)
 			{
 				throw new ArgumentNullException("source is null");
 			}
-			if( selector == null)
+			if (selector == null)
 			{
 				throw new ArgumentNullException("selector is null");
 			}
 			return SelectImpl(source, selector);
 		}
 
-		public static IEnumerable<TResult> SelectImpl<TSource,TResult>(
+		public static IEnumerable<TResult> SelectImpl<TSource, TResult>(
 			this IEnumerable<TSource> source,
-			Func<TSource,TResult> selector)
+			Func<TSource, TResult> selector)
 		{
 			foreach (TSource item in source)
 			{
@@ -60,5 +60,22 @@ namespace LinqPractice
 				index++;
 			}
 		}
+
+		//Select implemented using selectMany
+
+		//	public static IEnumerable<TResult> Select<TSource, TResult>(
+		//this IEnumerable<TSource> source,
+		//Func<TSource, TResult> selector)
+		//	{
+		//		if (source == null)
+		//		{
+		//			throw new ArgumentNullException("source");
+		//		}
+		//		if (selector == null)
+		//		{
+		//			throw new ArgumentNullException("selector");
+		//		}
+		//		return source.SelectMany(x => Enumerable.Repeat(selector(x), 1));
+		//	}
 	}
 }
