@@ -11,17 +11,17 @@ namespace LinqPractice
 		public static IEnumerable<TSource> Concat<TSource>(
 			this IEnumerable<TSource> first, IEnumerable<TSource> second)
 		{
-			if( first == null)
+			if (first == null)
 			{
 				throw new ArgumentNullException("the first sequence is null");
 			}
-			if(second == null)
+			if (second == null)
 			{
 				throw new ArgumentNullException("the second sequence in null");
 			}
 			return ConcatImpl(first, second);
 		}
-		private static IEnumerable<TSource> ConcatImpl<TSource>(IEnumerable<TSource>first,
+		private static IEnumerable<TSource> ConcatImpl<TSource>(IEnumerable<TSource> first,
 			IEnumerable<TSource> second)
 		{
 			foreach (TSource item in first)
@@ -34,7 +34,23 @@ namespace LinqPractice
 			{
 				yield return item;
 			}
-			
+
 		}
+
+		//concat implemented using selectMany
+	//	public static IEnumerable<TSource> Concat<TSource>(
+	//this IEnumerable<TSource> first,
+	//IEnumerable<TSource> second)
+	//	{
+	//		if (first == null)
+	//		{
+	//			throw new ArgumentNullException("first");
+	//		}
+	//		if (second == null)
+	//		{
+	//			throw new ArgumentNullException("second");
+	//		}
+	//		return new[] { first, second }.SelectMany(x => x);
+	//	}
 	}
 }
