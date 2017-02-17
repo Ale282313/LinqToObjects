@@ -2,7 +2,6 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,27 +15,27 @@ namespace LinqTests
 		public void RepeatAString3Times()
 		{
 			string a = "a";
-			Enumerator.Repeat(a, 3).AssertSequenceEqual("a", "a", "a");
+			Enumerable.Repeat(a, 3).AssertSequenceEqual("a", "a", "a");
 		}
 
 		[Test]
 		public void RepeatAnEmptySequence()
 		{
 			int number = 1;
-			Enumerator.Repeat(number, 0).AssertSequenceEqual();
+			Enumerable.Repeat(number, 0).AssertSequenceEqual();
 		}
 
 		[Test]
 		public void RepeatNullSequence()
 		{
 			string number = null;
-			Enumerator.Repeat(number, 2).AssertSequenceEqual(null, null);
+			Enumerable.Repeat(number, 2).AssertSequenceEqual(null, null);
 		}
 
 		[Test]
 		public void CheckNegativeCount()
 		{
-			Assert.Throws<ArgumentOutOfRangeException>(() => Enumerator.Repeat("a", -1));
+			Assert.Throws<ArgumentOutOfRangeException>(() => Enumerable.Repeat("a", -1));
 		}
 	}
 }

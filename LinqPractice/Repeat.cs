@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinqPractice
 {
-	public static partial class Enumerator
+	public static partial class Enumerable
 	{
 		public static IEnumerable<TResult> Repeat<TResult>(TResult element, int count)
 		{

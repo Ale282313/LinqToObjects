@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LinqPractice
 {
-	public static partial class Enumerator
+	public static partial class Enumerable
 	{
 
 		public static long LongCount<TSource>(this IEnumerable<TSource> source)
