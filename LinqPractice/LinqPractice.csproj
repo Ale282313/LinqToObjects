@@ -48,6 +48,10 @@
     <Compile Include="Concat.cs" />
     <Compile Include="Count.cs" />
     <Compile Include="Empty.cs" />
+    <Compile Include="First.cs" />
+    <Compile Include="FirstOrDefault.cs" />
+    <Compile Include="Last.cs" />
+    <Compile Include="LastOrDefault.cs" />
     <Compile Include="LongCount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +59,8 @@
     <Compile Include="Repeat.cs" />
     <Compile Include="Select.cs" />
     <Compile Include="SelectMany.cs" />
+    <Compile Include="Single.cs" />
+    <Compile Include="SingleOrDefault.cs" />
     <Compile Include="Where.cs" />
   </ItemGroup>
   <ItemGroup>
