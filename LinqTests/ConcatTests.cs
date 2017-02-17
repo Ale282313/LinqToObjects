@@ -12,13 +12,7 @@ namespace LinqTests
 	class ConcatTests
 	{
 
-		[Test]
-		public void Concatenation()
-		{
-			IEnumerable<string> first = new string[] { "a" };
-			IEnumerable<string> second = new string[] { "b" };
-			Enumerator.Concat(first, second).AssertSequenceEqual("a","b");
-		}
+		
 		[Test]
 		public void SimpleConcatenation()
 		{
