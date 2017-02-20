@@ -51,6 +51,7 @@
     <Compile Include="DefaultIfEmpty.cs" />
     <Compile Include="Distinct.cs" />
     <Compile Include="Empty.cs" />
+    <Compile Include="Except.cs" />
     <Compile Include="First.cs" />
     <Compile Include="FirstOrDefault.cs" />
     <Compile Include="Intersect.cs" />
