@@ -1,4 +1,5 @@
-﻿using LinqPractice;
+﻿
+using LinqPractice;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace LinqTests
 			string[] first = null;
 			string[] second = { };
 			Assert.Throws<ArgumentNullException>(() => first.Union(second));
+			
 		}
 		[Test]
 		public void NullSecondWithoutComparer()

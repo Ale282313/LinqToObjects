@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E96E8F99-2022-400B-8098-041ED21B3417}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{D2358DA2-0E73-441C-B1BE-5E29293511BF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LinqTests</RootNamespace>
-    <AssemblyName>LinqTests</AssemblyName>
+    <RootNamespace>TestSupport</RootNamespace>
+    <AssemblyName>TestSupport</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -36,8 +39,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,44 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AggregateTests.cs" />
-    <Compile Include="AllTests.cs" />
-    <Compile Include="AnyTests.cs" />
-    <Compile Include="ConcatTests.cs" />
-    <Compile Include="CountTests.cs" />
-    <Compile Include="DefaultIfEmptyTests.cs" />
-    <Compile Include="DistinctTests.cs" />
-    <Compile Include="EmptyTests.cs" />
-    <Compile Include="FirstOrDefaultTests.cs" />
-    <Compile Include="FirstTests.cs" />
-    <Compile Include="LastOrDefaultTests.cs" />
-    <Compile Include="LastTests.cs" />
-    <Compile Include="LongCountTests.cs" />
-    <Compile Include="RangeTests.cs" />
-    <Compile Include="RepeatTests.cs" />
-    <Compile Include="SelectManyTests.cs" />
-    <Compile Include="SelectTests.cs" />
-    <Compile Include="SingleOrDefaultTests.cs" />
-    <Compile Include="SingleTests.cs" />
-    <Compile Include="UnionTests.cs" />
-    <Compile Include="WhereTests.cs" />
+    <Compile Include="DummyClass.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestExtensions.cs" />
+    <Compile Include="ThrowingEnumerable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LinqPractice\LinqPractice.csproj">
-      <Project>{d977bf08-0d17-4a57-aad4-386a38ef0ac2}</Project>
-      <Name>LinqPractice</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TestSupport\TestSupport.csproj">
-      <Project>{d2358da2-0e73-441c-b1be-5e29293511bf}</Project>
-      <Name>TestSupport</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

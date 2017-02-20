@@ -12,13 +12,13 @@ namespace LinqTests
     /// 
     /// It may end up being expanded a bit though :)
     /// </summary>
-    internal static class TestExtensions
+    public static class TestExtensions
     {
         /// <summary>
         /// Just to make our testing easier, allow ourselves to use the real SequenceEquals
         /// call from LINQ to Obects.
         /// </summary>
-        internal static void AssertSequenceEqual<T>(this IEnumerable<T> actual, IEnumerable<T> expected)
+        public static void AssertSequenceEqual<T>(this IEnumerable<T> actual, IEnumerable<T> expected)
         {
             Assert.IsTrue(actual.SequenceEqual(expected));
         }
@@ -27,7 +27,7 @@ namespace LinqTests
         /// Make testing even easier - a params array makes for readable tests :)
         /// The sequence is evaluated exactly once.
         /// </summary>
-        internal static void AssertSequenceEqual<T>(this IEnumerable<T> actual, params T[] expected)
+        public static void AssertSequenceEqual<T>(this IEnumerable<T> actual, params T[] expected)
         {
             // Working with a copy means we can look over it more than once.
             // We're safe to do that with the array anyway.
@@ -42,7 +42,7 @@ namespace LinqTests
             }
         }
 
-        internal static string InsertBetween(this string delimiter, IEnumerable<string> items)
+        public static string InsertBetween(this string delimiter, IEnumerable<string> items)
         {
             StringBuilder builder = new StringBuilder();
             foreach (string item in items)
@@ -56,7 +56,7 @@ namespace LinqTests
             return builder.ToString();
         }
 
-        internal static IEnumerable<string> GenerateSplits(this string str, params char[] separators)
+        public static IEnumerable<string> GenerateSplits(this string str, params char[] separators)
         {
             foreach (var split in str.Split(separators))
                 yield return split;
