@@ -67,6 +67,7 @@
     <Compile Include="SingleTests.cs" />
     <Compile Include="TestExtensions.cs" />
     <Compile Include="ThrowingEnumerable.cs" />
+    <Compile Include="UnionTests.cs" />
     <Compile Include="WhereTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
