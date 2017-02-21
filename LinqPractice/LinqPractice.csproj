@@ -72,6 +72,7 @@
     <Compile Include="SelectMany.cs" />
     <Compile Include="Single.cs" />
     <Compile Include="SingleOrDefault.cs" />
+    <Compile Include="ToList.cs" />
     <Compile Include="ToLookup.cs" />
     <Compile Include="Union.cs" />
     <Compile Include="Where.cs" />
