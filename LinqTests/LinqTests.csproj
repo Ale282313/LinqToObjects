@@ -58,6 +58,7 @@
     <Compile Include="FirstOrDefaultTests.cs" />
     <Compile Include="FirstTests.cs" />
     <Compile Include="IntersectTests.cs" />
+    <Compile Include="JoinTests.cs" />
     <Compile Include="LastOrDefaultTests.cs" />
     <Compile Include="LastTests.cs" />
     <Compile Include="LongCountTests.cs" />

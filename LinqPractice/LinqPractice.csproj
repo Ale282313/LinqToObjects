@@ -58,6 +58,7 @@
     <Compile Include="IGrouping.cs" />
     <Compile Include="ILookup.cs" />
     <Compile Include="Intersect.cs" />
+    <Compile Include="Join.cs" />
     <Compile Include="Last.cs" />
     <Compile Include="LastOrDefault.cs" />
     <Compile Include="LongCount.cs" />
