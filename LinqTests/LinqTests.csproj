@@ -67,6 +67,7 @@
     <Compile Include="SelectTests.cs" />
     <Compile Include="SingleOrDefaultTests.cs" />
     <Compile Include="SingleTests.cs" />
+    <Compile Include="ToLookupTests.cs" />
     <Compile Include="UnionTests.cs" />
     <Compile Include="WhereTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
