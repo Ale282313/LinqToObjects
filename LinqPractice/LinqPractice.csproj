@@ -54,6 +54,7 @@
     <Compile Include="Except.cs" />
     <Compile Include="First.cs" />
     <Compile Include="FirstOrDefault.cs" />
+    <Compile Include="GroupBy.cs" />
     <Compile Include="Grouping.cs" />
     <Compile Include="IGrouping.cs" />
     <Compile Include="ILookup.cs" />
