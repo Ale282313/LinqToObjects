@@ -70,6 +70,10 @@
     <Compile Include="SelectTests.cs" />
     <Compile Include="SingleOrDefaultTests.cs" />
     <Compile Include="SingleTests.cs" />
+    <Compile Include="SkipTests.cs" />
+    <Compile Include="SkipWhileTests.cs" />
+    <Compile Include="TakeTests.cs" />
+    <Compile Include="TakeWhileTests.cs" />
     <Compile Include="ToListTests.cs" />
     <Compile Include="ToLookupTests.cs" />
     <Compile Include="UnionTests.cs" />
